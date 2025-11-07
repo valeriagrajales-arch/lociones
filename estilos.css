@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #181818;
+    color: #fff;
+}
+header {
+    background: linear-gradient(90deg, #ff4e50 0%, #1e90ff 100%);
+    padding: 2rem 0 1.5rem 0;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.header-title {
+    font-size: 2.8rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #fff 40%, #ff4e50 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;    
+    color: transparent;      
+}
+nav {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #ff4e50;
+}
+.slogan {
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+    color: #fff9;
+    letter-spacing: 1px;
+}
+.login-btn {
+    background: #fff;
+    color: #ff4e50 !important;
+    padding: 0.4em 1em;
+    border-radius: 20px;
+    margin-left: 1.5rem;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+.login-btn:hover {
+    background: #ff4e50;
+    color: #fff !important;
+}
+
+
+#login-modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#login-modal.activo {
+    display: flex;
+}
+
+
+.dashboard-container {
+    max-width: 600px;
+    margin: 3rem auto;
+    background: #222;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+.dashboard-container h1 {
+    margin-bottom: 2rem;
+}
+.stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.stat {
+    background: #1e90ff;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+}
+.volver {
+    background: #ff4e50;
+    color: #fff;
+    padding: 0.7em 2em;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.volver:hover {
+    background: #fff;
+    color: #ff4e50;
+}
